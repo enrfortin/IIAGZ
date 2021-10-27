@@ -92,12 +92,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <Compile Include="conexionmysql.vb" />
-    <Compile Include="Formxxx.Designer.vb">
-      <DependentUpon>Formxxx.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formxxx.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -389,9 +383,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="contratos.resx">
       <DependentUpon>contratos.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formxxx.resx">
-      <DependentUpon>Formxxx.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="listado.resx">
       <DependentUpon>listado.vb</DependentUpon>

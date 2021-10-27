@@ -76,3 +76,7 @@ C:\Users\T5600\Documents\AGZ\bin\Debug\ru\DevExpress.Pdf.v16.1.Core.resources.dl
 C:\Users\T5600\Documents\AGZ\obj\Debug\ssh.exe
 C:\Users\T5600\Documents\AGZ\obj\Debug\ssh.pdb
 C:\Users\T5600\Documents\AGZ\obj\Debug\ssh.vbprojResolveAssemblyReference.cache
+C:\Users\T5600\Documents\GitHub\IIAGZ\AGZ\bin\Debug\ssh.exe.config
+C:\Users\T5600\Documents\GitHub\IIAGZ\AGZ\obj\Debug\ssh.exe
+C:\Users\T5600\Documents\GitHub\IIAGZ\AGZ\obj\Debug\ssh.xml
+C:\Users\T5600\Documents\GitHub\IIAGZ\AGZ\obj\Debug\ssh.pdb
