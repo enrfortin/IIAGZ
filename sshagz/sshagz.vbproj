@@ -82,13 +82,93 @@
   <ItemGroup>
     <Compile Include="chrilyhd_matriculaagzDataSet.vb" />
     <Compile Include="chrilyhd_matriculaagzDataSet1.vb" />
-    <Compile Include="conexionmysql.vb" />
+    <Compile Include="chrilyhd_matriculaagzDataSet1TableAdapters\matricula2TableAdapter.vb" />
+    <Compile Include="chrilyhd_matriculaagzDataSet1TableAdapters\matriculaTableAdapter.vb" />
+    <Compile Include="chrilyhd_matriculaagzDataSet1TableAdapters\TableAdapterManager.vb" />
+    <Compile Include="chrilyhd_matriculaagzDataSetTableAdapters\matricula2TableAdapter.vb" />
+    <Compile Include="chrilyhd_matriculaagzDataSetTableAdapters\matriculaTableAdapter.vb" />
+    <Compile Include="chrilyhd_matriculaagzDataSetTableAdapters\TableAdapterManager.vb" />
+    <Compile Include="Formularios\browser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\buscar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\buscar_ficha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\contratos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cyf3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ficha_matricula.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\Form1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Module1.vb" />
-    <Compile Include="modulo_funciones_sql.vb" />
-    <Compile Include="modulo_variables_globales.vb" />
+    <Compile Include="Formularios\formcontratobch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formcontratocuarto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formcontratoCYF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formcontratocyf2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formcontratodiezinformatica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formcontratodoceinformatica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formcontratojardin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formcontratonoveno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formcontratooctavo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formcontratooncebch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formcontratoonceinformatica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formcontratopreparatotia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formcontratoprimero.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formcontratoquinto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formcontratosegundo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formcontratoseptimo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formcontratosexto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formcontratotercero.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\listado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Registro.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -108,26 +188,120 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Resources.Designer.vb">
-      <DependentUpon>Resources.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DesignTime>True</DesignTime>
+    <Compile Include="Formularios\todos_registros.vb">
+      <SubType>Form</SubType>
     </Compile>
+    <Compile Include="reportes\Validacion_Caracteres.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Formularios\browser.resx">
+      <DependentUpon>browser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\buscar.resx">
+      <DependentUpon>buscar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\buscar_ficha.resx">
+      <DependentUpon>buscar_ficha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\contratos.resx">
+      <DependentUpon>contratos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cyf3.resx">
+      <DependentUpon>Cyf3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ficha_matricula.resx">
+      <DependentUpon>ficha_matricula.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formcontratocuarto.resx">
+      <DependentUpon>formcontratocuarto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formcontratoCYF.resx">
+      <DependentUpon>formcontratoCYF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formcontratocyf2.resx">
+      <DependentUpon>formcontratocyf2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formcontratodiezinformatica.resx">
+      <DependentUpon>formcontratodiezinformatica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formcontratodoceinformatica.resx">
+      <DependentUpon>formcontratodoceinformatica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formcontratojardin.resx">
+      <DependentUpon>formcontratojardin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formcontratonoveno.resx">
+      <DependentUpon>formcontratonoveno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formcontratooctavo.resx">
+      <DependentUpon>formcontratooctavo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formcontratooncebch.resx">
+      <DependentUpon>formcontratooncebch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formcontratoonceinformatica.resx">
+      <DependentUpon>formcontratoonceinformatica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formcontratopreparatotia.resx">
+      <DependentUpon>formcontratopreparatotia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formcontratoprimero.resx">
+      <DependentUpon>formcontratoprimero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formcontratoquinto.resx">
+      <DependentUpon>formcontratoquinto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formcontratosegundo.resx">
+      <DependentUpon>formcontratosegundo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formcontratoseptimo.resx">
+      <DependentUpon>formcontratoseptimo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formcontratosexto.resx">
+      <DependentUpon>formcontratosexto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formcontratotercero.resx">
+      <DependentUpon>formcontratotercero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\listado.resx">
+      <DependentUpon>listado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Registro.resx">
+      <DependentUpon>Registro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    <EmbeddedResource Include="reportes\ssh.BCH.rdlc" />
+    <EmbeddedResource Include="reportes\ssh.cuarto.rdlc" />
+    <EmbeddedResource Include="reportes\ssh.CYF.rdlc" />
+    <EmbeddedResource Include="reportes\ssh.cyf2.rdlc" />
+    <EmbeddedResource Include="reportes\ssh.cyf3.rdlc" />
+    <EmbeddedResource Include="reportes\ssh.diezinformatica.rdlc" />
+    <EmbeddedResource Include="reportes\ssh.doceavo.rdlc" />
+    <EmbeddedResource Include="reportes\ssh.ficha de matricula.rdlc" />
+    <EmbeddedResource Include="reportes\ssh.jardin.rdlc" />
+    <EmbeddedResource Include="reportes\ssh.noveno.rdlc" />
+    <EmbeddedResource Include="reportes\ssh.octavo.rdlc" />
+    <EmbeddedResource Include="reportes\ssh.oncebch.rdlc" />
+    <EmbeddedResource Include="reportes\ssh.onceinformatica.rdlc" />
+    <EmbeddedResource Include="reportes\ssh.preparatoria.rdlc" />
+    <EmbeddedResource Include="reportes\ssh.primero.rdlc" />
+    <EmbeddedResource Include="reportes\ssh.quinto.rdlc" />
+    <EmbeddedResource Include="reportes\ssh.segundo.rdlc" />
+    <EmbeddedResource Include="reportes\ssh.septimo.rdlc" />
+    <EmbeddedResource Include="reportes\ssh.sexto.rdlc" />
+    <EmbeddedResource Include="reportes\ssh.tercero.rdlc" />
+    <EmbeddedResource Include="reportes\ssh.todos_alumnos.rdlc" />
+    <EmbeddedResource Include="Formularios\todos_registros.resx">
+      <DependentUpon>todos_registros.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -141,7 +315,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="resources\audit.png" />

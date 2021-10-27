@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Image Name="Image2">
+        <Source>Embedded</Source>
+        <Value>iconguille1</Value>
+        <Sizing>FitProportional</Sizing>
+        <Top>0.06615cm</Top>
+        <Left>0.18475cm</Left>
+        <Height>1.5cm</Height>
+        <Width>1.5cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Image>
+      <Textbox Name="Textbox25">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>       CONTRATO DE SERVICIO PROFESIONAL EDUCATIVO 2021</Value>
+                <Style>
+                  <FontStyle>Italic</FontStyle>
+                  <FontFamily>Eras Bold ITC</FontFamily>
+                  <FontSize>14pt</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value xml:space="preserve">        </Value>
+                <Style>
+                  <FontStyle>Italic</FontStyle>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>X GRADO BACHILLERATO TECNICO PROFESIONAL EN CONTADURIA Y FINANZAS</Value>
+                <Style>
+                  <FontStyle>Italic</FontStyle>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Nosotros, NOE PINEDA PORTILLO Identidad No.1619-1935-00081, </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>mayor de edad, Casado, hondureño y de este domicilio actuando en mi condición de Representante Legal   de la SOCIEDAD GENERAL DE ESTUDIOS ALFONSO GUILLEN ZELAYA SOGESA DE C.V.  Propietaria del Centro Educativo No Gubernamental “</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>ALFONSO GUILLEN ZELAYA</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>”,  también de este término Municipal por una parte, y por la otra el Padre/Madre o Encargado(a)  </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!padre.Value</Value>
+                <Style>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>, Mayor de edad, hondureño(a) de profesión u oficio: </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!profesion.Value</Value>
+                <Style>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> Identidad No. </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!idp.Value</Value>
+                <Style>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> y también de este domicilio, por este acto hemos convenido celebrar como en efecto lo hacemos el presente Contrato de Servicio Profesional Educativo que se regirá bajo las siguientes cláusulas y condiciones.-  </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>PRIMERA</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>: </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>Declara el Señor </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> NOE PINEDA PORTILLO </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> en el carácter con que actúa  y para los efectos legales del presente contrato y que en adelante se denominará el Representante Legal de la Sociedad  General de Estudios “Alfonso Guillén Zelaya” Sociedad Anónima Capital Variable,   propietario del Centro Educativo No Gubernamental “</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>ALFONSO GUILLEN ZELAYA</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>” en el cual se  imparten las carreras de Bachiller Técnico Profesional en Informática, Bachiller Técnico Profesional en Contaduría y Finanzas, Bachiller en Ciencias y Humanidades y Ciclo Básico en la Jornada Matutina,   con domicilio en la Colonia Altos de San José del Pedregal de la ciudad de Comayagüela, M.D.C. en base a los horarios establecidos por la Dirección del Centro  Educativo. </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>SEGUNDA:</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> Continúa Manifestando el Representante Legal, que investido de las facultades a él conferidas por el Consejo de Administración de la Sociedad antes mencionada y con fundamento en la ley, SE compromete  por el presente Contrato a brindar al / la estudiante:</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!nombre.Value</Value>
+                <Style>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> los servicios educativos en el </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>DECIMO GRADO DE BACHILLERATO EN CONTADURIA Y FINANZAS  </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>TERCERA</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> Sigue manifestando el Representante Legal que por el servicio profesional educativo que recibe el</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>/la </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>estudiante:</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!nombre.Value</Value>
+                <Style>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> en este Centro Educativo el Padre, madre de Familia o Encargado(a) pagará en concepto de matrícula la cantidad de L. 1,000.00 (mil lempiras) y en concepto de pago de Colegiaturas por servicios educativos del año lectivo 2021  la cantidad de __________________ lempiras,  pagaderos </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>11 colegiaturas  las cuales serán  diferidas en   10 meses</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>, </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>en </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>el caso que el estudiante lleve materia retrasada tendrá un pago adicional de L. 500.00 sobre la colegiatura antes mencionada, por semestre o anual según sea el caso. </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>CUARTA</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> Sigue manifestando el  Representante Legal que las cuotas por concepto de pago de colegiaturas que pagará el Padre, madre de Familia o Encargado(a), lo hará a través de una Institución Bancaria que para tal efecto designe la institución, pagos que  deberán hacerse  </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>REALIZANDO SU PRIMER PAGO  ANTICIPADO EL 5  DE FEBRERO  Y CONCLUYENDO EL 05 DE NOVIEMBRE  CON  SU ULTIMO PAGO, </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>en el entendido que después de esa fecha, pagará </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>L.100.00 (cien lempiras) por cada mes de atraso en el pago de la colegiatura convenida </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>QUINTA</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>  Así mismo manifiesta el Representante Legal que el Padre madre de Familia o Encargado del estudiante antes mencionado(a) queda obligado al  cumplimiento de las Leyes, normas de convivencia,  actividades emanadas de la Dirección Académica,  asistir  a las sesiones que para tal efecto fuere convocado, a darle seguimiento al rendimiento académico cada 15 días de su hijo o hija, deberá firmar el formato de seguimiento en cada visita para el respaldo de la academia, también está obligado a actualizar la información telefónica cuando ésta haya sufrido cambios</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>.</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve"> </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>SEXTA</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve"> </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>Asimismo manifiesta el Representante Legal que el Padre madre de Familia o Encargado(a) del estudiante antes mencionado(a) debe responder por los gastos en que pudiere haber incurrido la empresa en la reparación de los daños y perjuicios causados por su hijo o hija al edificio, mobiliario u otros.</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve"> </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>SEPTIMA</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve"> </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>Sigue manifestando el Representante Legal que para la aplicación de los exámenes parciales y para optar al examen general y actos de graduación el Padre madre de Familia y/o Encargado(a) debe estar solvente en sus pagos de los </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>11 meses convenidos</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>. </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>OCTAVA</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve"> </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>La falta de pago de dos (2) colegiaturas consecutivas  dará lugar a la cancelación de los servicios profesionales educativos procediendo el  </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>Padre madre  de Familia y/o Encargado(a) </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> al retiro inmediato del estudiante sin responsabilidad alguna de parte del Centro Educativo y sin  perjuicio de las acciones legales correspondientes para la recuperación de lo adeudado, quedando obligado el  Padre madre  de Familia y/o Encargado</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>(a) </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> del pago de honorarios profesionales que causen estas acciones.</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve"> </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>NOVENA </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>  Se cobrará un 2% de recargo mensual por pago tardío del año anterior. Adicional al pago normal del recargo</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>. DECIMA:</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>   El Padre de Familia y/o Encargado(a) declara VOLUNTARIAMENTE que es cierto y acepta   todo lo manifestado     en cada una de las cláusulas estipuladas en el presente Contrato de Servicio Profesional Educativo que es Ley entre las partes contratantes. </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>DECIMA PRIMERA</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>: Para constancia y seguridad de este contrato, firmamos el presente Contrato en la ciudad de Comayagüela, M.D.C., a los </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Day(DateTime.Now.ToShortDateString())</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> días del mes de </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=MonthName(Month(DateTime.Now))</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> del año </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Year(DateTime.Now)</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>, dejando además el padre de familia y/o encargado impreso su huella digital para dar FE.</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>(F)_________________________________                    (F)_____________________________________</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontSize>11pt</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <LeftIndent>0cm</LeftIndent>
+            <RightIndent>0cm</RightIndent>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <LineHeight>13pt</LineHeight>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>      Representante Legal C.E.N.G.A.G.Z.                         Padre de Familia, Encargado(a) y/o Alumno(a)  </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontSize>11pt</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <LeftIndent>0cm</LeftIndent>
+            <RightIndent>0cm</RightIndent>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value xml:space="preserve">                                                                                                        </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontSize>11pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>Identidad No. </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontSize>11pt</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!idp.Value</Value>
+                <Style>
+                  <FontFamily>Calibri</FontFamily>
+                  <FontSize>11pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <LeftIndent>0cm</LeftIndent>
+            <RightIndent>0cm</RightIndent>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox25</rd:DefaultName>
+        <Top>1.56615cm</Top>
+        <Left>0.18475cm</Left>
+        <Height>26.80202cm</Height>
+        <Width>16.80197cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>11.16857in</Height>
+    <Style>
+      <Border>
+        <Style>None</Style>
+        <Width>0.3pt</Width>
+      </Border>
+    </Style>
+  </Body>
+  <Width>6.76042in</Width>
+  <Page>
+    <PageHeight>35.56cm</PageHeight>
+    <PageWidth>21.59cm</PageWidth>
+    <LeftMargin>2cm</LeftMargin>
+    <RightMargin>2cm</RightMargin>
+    <TopMargin>2cm</TopMargin>
+    <BottomMargin>2cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="chrilyhd_matriculaagzDataSet">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>0adf80c0-b52d-4ea6-b58f-796c7ee78910</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>chrilyhd_matriculaagzDataSet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="id_matricula">
+          <DataField>id_matricula</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="nombre">
+          <DataField>nombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="identidad_alumno">
+          <DataField>identidad_alumno</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="idp">
+          <DataField>idp</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="grado">
+          <DataField>grado</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="profesion">
+          <DataField>profesion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="padre">
+          <DataField>padre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="telefono">
+          <DataField>telefono</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="email">
+          <DataField>email</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="codigo">
+          <DataField>codigo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="direccion">
+          <DataField>direccion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>chrilyhd_matriculaagzDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\enr_f\Desktop\Proyecto guillen\ssh\ssh\chrilyhd_matriculaagzDataSet.xsd</rd:SchemaPath>
+        <rd:TableName>matricula2</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>matricula2TableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <EmbeddedImages>
+    <EmbeddedImage Name="iconguille1">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>efa287e2-18c8-43c8-905f-f9447e2e0809</rd:ReportID>
+</Report>

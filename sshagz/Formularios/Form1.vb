@@ -395,35 +395,35 @@ Namespace ssh
         End Sub
 
         Private Sub TileItem1ItemClick(ByVal sender As Object, ByVal e As TileItemEventArgs) Handles TileItem1.ItemClick
-            MyProject.Forms.contratos.Show()
+            contratos.Show()
         End Sub
 
         Private Sub TileItem2ItemClick(ByVal sender As Object, ByVal e As TileItemEventArgs) Handles TileItem2.ItemClick
-            MyProject.Forms.buscar.Show()
+            Buscar.Show()
         End Sub
 
         Private Sub TileItem3ItemClick(ByVal sender As Object, ByVal e As TileItemEventArgs) Handles TileItem3.ItemClick
-            MyProject.Forms.buscar_ficha.Show()
+            buscar_ficha.Show()
         End Sub
 
         Private Sub TileItem4ItemClick(ByVal sender As Object, ByVal e As TileItemEventArgs) Handles TileItem4.ItemClick
-            MyProject.Forms.listado.Show()
+            listado.Show()
         End Sub
 
         Private Sub TileItem5ItemClick(ByVal sender As Object, ByVal e As TileItemEventArgs) Handles TileItem5.ItemClick
-            MyProject.Forms.Registro.Limpiar()
-            MyProject.Forms.Registro.Show()
-            MyProject.Forms.Registro.Label7.Text = "Registro de nuevo alumno"
-            MyProject.Forms.Registro.SimpleButton3.Visible = False
+            Registro.Limpiar()
+            Registro.Show()
+            Registro.Label7.Text = "Registro de nuevo alumno"
+            Registro.SimpleButton3.Visible = False
             'MessageBox.Show(conexionmysql.myconn.State.ToString)
         End Sub
 
         Private Sub TileItem6ItemClick(ByVal sender As Object, ByVal e As TileItemEventArgs) Handles TileItem6.ItemClick
-            MyProject.Forms.todos_registros.Show()
+            todos_registros.Show()
         End Sub
 
         Private Sub TileItem7ItemClick(ByVal sender As Object, ByVal e As TileItemEventArgs) Handles TileItem7.ItemClick
-            MyProject.Forms.browser.Show()
+            browser.Show()
         End Sub
 
         Private Sub TileNavPane1MouseMove(ByVal sender As Object, ByVal e As MouseEventArgs) Handles TileNavPane1.MouseMove
