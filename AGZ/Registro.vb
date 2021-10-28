@@ -1686,84 +1686,82 @@ Namespace ssh
                     Interaction.MsgBox("Por favor ingrese el Contacto de emergencia del alumno", MsgBoxStyle.OkOnly, Nothing)
                     Me.TextBox17.[Select]()
                 ElseIf (Not (Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.TextBox18.Text, "Telefóno contacto de emergencia del alumno", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.TextBox18.Text, "", False) = 0)) Then
-
-                    conexionmysql.Abrir_MYBD()
-                    '  Dim mySqlTransaction0 As MySqlTransaction = conexionmysql.myconn.BeginTransaction()
                     Try
-                        Try
-                            Dim mySqlCommand As MySql.Data.MySqlClient.MySqlCommand = New MySql.Data.MySqlClient.MySqlCommand("insert into matricula2 (nombre,identidadalumno,idp,grado,profesion,padre,telefono,email,direccion, lugartrabajo, nombrepadre, lugartrabajopadre, telefonopadre, nombremadre, lugartrabajomadre, telefonomadre, deptonac, municipionac, emergencia, telefonoemergencia, sexo, condicionado, repitente, fechanac, nacionalidad, edad, modalidad, colegioanterior, cursoanterior, modalidadanterior, anioanterior, lugaranterior) values (@nombrealumno,@identidadalumno,@idp,@grado,@profesion,@padre,@telefono,@email,@direccion, @lugartrabajo, @nombrepadre, @lugartrabajopadre, @telefonopadre, @nombremadre, @lugartrabajomadre, @telefonomadre, @deptonac, @municipionac, @emergencia, @telefonoemergencia, @sexo, @condicionado, @repitente, @fechanac, @nacionalidad, @edad, @modalidad, @colegioanterior, @cursoanterior, @modalidadanterior, @anioanterior, @lugaranterior);", conexionmysql.myconn)
-                            mySqlCommand.Parameters.AddWithValue("@nombrealumno", Me.TextBox2.Text)
-                            mySqlCommand.Parameters.AddWithValue("@identidadalumno", Me.TextBox3.Text)
-                            mySqlCommand.Parameters.AddWithValue("@idp", Me.TextBox7.Text)
-                            mySqlCommand.Parameters.AddWithValue("@grado", Me.ComboBox1.Text)
-                            mySqlCommand.Parameters.AddWithValue("@profesion", Me.TextBox4.Text)
-                            mySqlCommand.Parameters.AddWithValue("@padre", Me.TextBox6.Text)
-                            mySqlCommand.Parameters.AddWithValue("@lugartrabajo", Me.TextBox5.Text)
-                            mySqlCommand.Parameters.AddWithValue("@telefono", Me.TextBox9.Text)
-                            str = If(Not (Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.TextBox8.Text, "", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.TextBox8.Text, "", False) = 0), Me.TextBox8.Text, "Correo electronico (opcional)")
-                            mySqlCommand.Parameters.AddWithValue("@email", str)
-                            mySqlCommand.Parameters.AddWithValue("@direccion", Me.TextBox13.Text)
-                            mySqlCommand.Parameters.AddWithValue("@nombrepadre", Me.TextBox10.Text)
-                            mySqlCommand.Parameters.AddWithValue("@lugartrabajopadre", Me.TextBox11.Text)
-                            mySqlCommand.Parameters.AddWithValue("@telefonopadre", Me.TextBox15.Text)
-                            mySqlCommand.Parameters.AddWithValue("@nombremadre", Me.TextBox14.Text)
-                            mySqlCommand.Parameters.AddWithValue("@lugartrabajomadre", Me.TextBox12.Text)
-                            mySqlCommand.Parameters.AddWithValue("@telefonomadre", Me.TextBox16.Text)
-                            mySqlCommand.Parameters.AddWithValue("@deptonac", Me.TextBox20.Text)
-                            mySqlCommand.Parameters.AddWithValue("@municipionac", Me.TextBox21.Text)
-                            mySqlCommand.Parameters.AddWithValue("@emergencia", Me.TextBox17.Text)
-                            mySqlCommand.Parameters.AddWithValue("@telefonoemergencia", Me.TextBox18.Text)
-                            str1 = If(Not Me.RadioButton1.Checked, "Femenino", "Masculino")
-                            mySqlCommand.Parameters.AddWithValue("@sexo", str1)
-                            str2 = If(Not Me.RadioButton4.Checked, "No", "Si")
-                            mySqlCommand.Parameters.AddWithValue("@condicionado", str2)
-                            str3 = If(Not Me.RadioButton6.Checked, "No", "Si")
-                            mySqlCommand.Parameters.AddWithValue("@repitente", str3)
-                            mySqlCommand.Parameters.AddWithValue("@fechanac", RuntimeHelpers.GetObjectValue(Me.DateEdit1.EditValue))
-                            mySqlCommand.Parameters.AddWithValue("@nacionalidad", Me.TextBox19.Text)
-                            mySqlCommand.Parameters.AddWithValue("@edad", modulo_variables_globales.edad)
-                            If (Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "Jardin", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "Preparatoria", False) = 0) Then
-                                str4 = "JARDIN DE NIÑOS"
-                            ElseIf (Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "1ro", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "2do", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "3ro", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "4to", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "5to", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "6to", False) = 0) Then
-                                str4 = "ESCUELA"
-                            ElseIf (Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "7mo", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "8vo", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "9no", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IBCH", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IIBCH", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "ICONTADURIA", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IICONTADURIA", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IIICONTADURIA", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IBTPI", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IIBTPI", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IIIBTPI", False) = 0) Then
-                                str4 = "COLEGIO"
-                            End If
-                            mySqlCommand.Parameters.AddWithValue("@modalidad", str4)
-                            mySqlCommand.Parameters.AddWithValue("@colegioanterior", Me.TextBox22.Text)
-                            mySqlCommand.Parameters.AddWithValue("@cursoanterior", Me.ComboBox2.Text)
-                            If (Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "Jardin", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "Preparatoria", False) = 0) Then
-                                str5 = "JARDIN DE NIÑOS"
-                            ElseIf (Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "1ro", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "2do", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "3ro", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "4to", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "5to", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "6to", False) = 0) Then
-                                str5 = "ESCUELA"
-                            ElseIf (Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "7mo", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "8vo", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "9no", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IBCH", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IIBCH", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "ICONTADURIA", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IICONTADURIA", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IIICONTADURIA", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IBTPI", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IIBTPI", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IIIBTPI", False) = 0) Then
-                                str5 = "COLEGIO"
-                            End If
-                            mySqlCommand.Parameters.AddWithValue("@modalidadanterior", str5)
-                            mySqlCommand.Parameters.AddWithValue("@anioanterior", Me.TextBox24.Text)
-                            mySqlCommand.Parameters.AddWithValue("@lugaranterior", Me.TextBox25.Text)
-                            ' mySqlCommand.Transaction = CType(mySqlTransaction0, MySqlTransaction)
-                            ' mySqlCommand.ExecuteNonQuery()
-                            '  mySqlTransaction0.Commit()
-                        Catch ex As Exception
-                            'Interaction.MsgBox(ex.ToString)
-                            'Dim exception1 As System.Exception = exception2
-                            ' mySqlTransaction0.Rollback()
-                            Interaction.MsgBox(String.Concat("ERROR AL REGISTRAR", ex.Message), DirectCast(Conversions.ToInteger(String.Concat(Conversions.ToString(16), ex.ToString())), MsgBoxStyle), "Manejo de datos")
-                            'ProjectData.ClearProjectError()
-                        End Try
+                        conexionmysql.Abrir_MYBD()
+                    Catch
+                    End Try
+                    Try
+                        Dim mySqlTransaction0 As MySqlTransaction = conexionmysql.myconn.BeginTransaction()
+                        Dim mySqlCommand As MySql.Data.MySqlClient.MySqlCommand = New MySql.Data.MySqlClient.MySqlCommand("insert into matricula2 (nombre,identidadalumno,idp,grado,profesion,padre,telefono,email,direccion, lugartrabajo, nombrepadre, lugartrabajopadre, telefonopadre, nombremadre, lugartrabajomadre, telefonomadre, deptonac, municipionac, emergencia, telefonoemergencia, sexo, condicionado, repitente, fechanac, nacionalidad, edad, modalidad, colegioanterior, cursoanterior, modalidadanterior, anioanterior, lugaranterior) values (@nombrealumno,@identidadalumno,@idp,@grado,@profesion,@padre,@telefono,@email,@direccion, @lugartrabajo, @nombrepadre, @lugartrabajopadre, @telefonopadre, @nombremadre, @lugartrabajomadre, @telefonomadre, @deptonac, @municipionac, @emergencia, @telefonoemergencia, @sexo, @condicionado, @repitente, @fechanac, @nacionalidad, @edad, @modalidad, @colegioanterior, @cursoanterior, @modalidadanterior, @anioanterior, @lugaranterior);", conexionmysql.myconn)
+                        mySqlCommand.Parameters.AddWithValue("@nombrealumno", Me.TextBox2.Text)
+                        mySqlCommand.Parameters.AddWithValue("@identidadalumno", Me.TextBox3.Text)
+                        mySqlCommand.Parameters.AddWithValue("@idp", Me.TextBox7.Text)
+                        mySqlCommand.Parameters.AddWithValue("@grado", Me.ComboBox1.Text)
+                        mySqlCommand.Parameters.AddWithValue("@profesion", Me.TextBox4.Text)
+                        mySqlCommand.Parameters.AddWithValue("@padre", Me.TextBox6.Text)
+                        mySqlCommand.Parameters.AddWithValue("@lugartrabajo", Me.TextBox5.Text)
+                        mySqlCommand.Parameters.AddWithValue("@telefono", Me.TextBox9.Text)
+                        str = If(Not (Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.TextBox8.Text, "", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.TextBox8.Text, "", False) = 0), Me.TextBox8.Text, "Correo electronico (opcional)")
+                        mySqlCommand.Parameters.AddWithValue("@email", str)
+                        mySqlCommand.Parameters.AddWithValue("@direccion", Me.TextBox13.Text)
+                        mySqlCommand.Parameters.AddWithValue("@nombrepadre", Me.TextBox10.Text)
+                        mySqlCommand.Parameters.AddWithValue("@lugartrabajopadre", Me.TextBox11.Text)
+                        mySqlCommand.Parameters.AddWithValue("@telefonopadre", Me.TextBox15.Text)
+                        mySqlCommand.Parameters.AddWithValue("@nombremadre", Me.TextBox14.Text)
+                        mySqlCommand.Parameters.AddWithValue("@lugartrabajomadre", Me.TextBox12.Text)
+                        mySqlCommand.Parameters.AddWithValue("@telefonomadre", Me.TextBox16.Text)
+                        mySqlCommand.Parameters.AddWithValue("@deptonac", Me.TextBox20.Text)
+                        mySqlCommand.Parameters.AddWithValue("@municipionac", Me.TextBox21.Text)
+                        mySqlCommand.Parameters.AddWithValue("@emergencia", Me.TextBox17.Text)
+                        mySqlCommand.Parameters.AddWithValue("@telefonoemergencia", Me.TextBox18.Text)
+                        str1 = If(Not Me.RadioButton1.Checked, "Femenino", "Masculino")
+                        mySqlCommand.Parameters.AddWithValue("@sexo", str1)
+                        str2 = If(Not Me.RadioButton4.Checked, "No", "Si")
+                        mySqlCommand.Parameters.AddWithValue("@condicionado", str2)
+                        str3 = If(Not Me.RadioButton6.Checked, "No", "Si")
+                        mySqlCommand.Parameters.AddWithValue("@repitente", str3)
+                        mySqlCommand.Parameters.AddWithValue("@fechanac", RuntimeHelpers.GetObjectValue(Me.DateEdit1.EditValue))
+                        mySqlCommand.Parameters.AddWithValue("@nacionalidad", Me.TextBox19.Text)
+                        mySqlCommand.Parameters.AddWithValue("@edad", modulo_variables_globales.edad)
+                        If (Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "Jardin", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "Preparatoria", False) = 0) Then
+                            str4 = "JARDIN DE NIÑOS"
+                        ElseIf (Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "1ro", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "2do", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "3ro", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "4to", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "5to", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "6to", False) = 0) Then
+                            str4 = "ESCUELA"
+                        ElseIf (Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "7mo", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "8vo", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "9no", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IBCH", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IIBCH", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "ICONTADURIA", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IICONTADURIA", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IIICONTADURIA", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IBTPI", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IIBTPI", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IIIBTPI", False) = 0) Then
+                            str4 = "COLEGIO"
+                        End If
+                        mySqlCommand.Parameters.AddWithValue("@modalidad", str4)
+                        mySqlCommand.Parameters.AddWithValue("@colegioanterior", Me.TextBox22.Text)
+                        mySqlCommand.Parameters.AddWithValue("@cursoanterior", Me.ComboBox2.Text)
+                        If (Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "Jardin", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "Preparatoria", False) = 0) Then
+                            str5 = "JARDIN DE NIÑOS"
+                        ElseIf (Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "1ro", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "2do", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "3ro", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "4to", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "5to", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "6to", False) = 0) Then
+                            str5 = "ESCUELA"
+                        ElseIf (Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "7mo", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "8vo", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "9no", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IBCH", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IIBCH", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "ICONTADURIA", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IICONTADURIA", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IIICONTADURIA", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IBTPI", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IIBTPI", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.ComboBox1.Text, "IIIBTPI", False) = 0) Then
+                            str5 = "COLEGIO"
+                        End If
+                        mySqlCommand.Parameters.AddWithValue("@modalidadanterior", str5)
+                        mySqlCommand.Parameters.AddWithValue("@anioanterior", Me.TextBox24.Text)
+                        mySqlCommand.Parameters.AddWithValue("@lugaranterior", Me.TextBox25.Text)
+
+                        mySqlCommand.Transaction = CType(mySqlTransaction0, MySqlTransaction)
+                        mySqlCommand.ExecuteNonQuery()
+                        mySqlTransaction0.Commit()
+                    Catch ex As Exception
+                        Interaction.MsgBox("ERROR AL REGISTRAR", ex.ToString)
+                        'ProjectData.ClearProjectError()
+
                     Finally
                         conexionmysql.Cerrar_MYBD()
                         Interaction.MsgBox("EXITO AL REGISTRAR", MsgBoxStyle.Information, "Manejo de datos")
                     End Try
+
                     Try
                         Me.Limpiar()
                     Catch exception3 As System.Exception
-                        ProjectData.SetProjectError(exception3)
-                        exception = exception3
-                        ProjectData.ClearProjectError()
+                        Interaction.MsgBox(exception3)
                     End Try
-                    Return
+
                 Else
                     Interaction.MsgBox("Por favor ingrese el Telefóno contacto de emergencia del alumno", MsgBoxStyle.OkOnly, Nothing)
                     Me.TextBox18.[Select]()
@@ -1775,7 +1773,7 @@ Namespace ssh
                 Catch exception3 As System.Exception
                     Interaction.MsgBox(exception3.ToString)
                 End Try
-                Return
+
             End Try
         End Sub
 
