@@ -5,15 +5,10 @@ Imports ssh.chrilyhd_matriculaagzDataSetTableAdapters
 Imports System
 Imports System.Collections.ObjectModel
 Imports System.ComponentModel
-Imports System.Data
-Imports System.Data.Common
-Imports System.Diagnostics
-Imports System.Drawing
-Imports System.Runtime.CompilerServices
-Imports System.Windows.Forms
 
-Namespace ssh
-	<DesignerGenerated>
+
+
+<DesignerGenerated>
 	Public Class Cyf3
 		Inherits Form
 		Private components As IContainer
@@ -100,4 +95,3 @@ Namespace ssh
 			MyBase.ResumeLayout(False)
 		End Sub
 	End Class
-End Namespace

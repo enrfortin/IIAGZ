@@ -446,7 +446,7 @@ Namespace ssh
 
         Private Sub Button5Click(ByVal sender As Object, ByVal e As EventArgs)
             MyBase.Hide()
-            MyProject.Forms.Registro.Show()
+            Registro.Show()
         End Sub
 
         Private Sub Button7Click(ByVal sender As Object, ByVal e As EventArgs)
@@ -486,139 +486,139 @@ Namespace ssh
                 Try
                     Dim currentRow As DataGridViewRow = Me.DataGridView1.CurrentRow
                     modulo_variables_globales.valor_del_cellclick = Conversions.ToInteger(currentRow.Cells(0).Value)
-                    MyProject.Forms.Registro.TextBox2.Text = Conversions.ToString(currentRow.Cells(1).Value)
-                    MyProject.Forms.Registro.TextBox6.Text = Conversions.ToString(currentRow.Cells(6).Value)
-                    MyProject.Forms.Registro.TextBox3.Text = Conversions.ToString(currentRow.Cells(2).Value)
-                    MyProject.Forms.Registro.TextBox7.Text = Conversions.ToString(currentRow.Cells(3).Value)
-                    MyProject.Forms.Registro.TextBox4.Text = Conversions.ToString(currentRow.Cells(5).Value)
+                    Registro.TextBox2.Text = Conversions.ToString(currentRow.Cells(1).Value)
+                    Registro.TextBox6.Text = Conversions.ToString(currentRow.Cells(6).Value)
+                    Registro.TextBox3.Text = Conversions.ToString(currentRow.Cells(2).Value)
+                    Registro.TextBox7.Text = Conversions.ToString(currentRow.Cells(3).Value)
+                    Registro.TextBox4.Text = Conversions.ToString(currentRow.Cells(5).Value)
                     If (Not (Information.IsDBNull(RuntimeHelpers.GetObjectValue(currentRow.Cells(8).Value)) Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Conversions.ToString(currentRow.Cells(8).Value), "", False) = 0)) Then
-                        MyProject.Forms.Registro.TextBox8.Text = Conversions.ToString(currentRow.Cells(8).Value)
+                        Registro.TextBox8.Text = Conversions.ToString(currentRow.Cells(8).Value)
                     Else
-                        MyProject.Forms.Registro.TextBox8.Text = "Correo electronico (opcional)"
+                        Registro.TextBox8.Text = "Correo electronico (opcional)"
                     End If
-                    MyProject.Forms.Registro.TextBox9.Text = Conversions.ToString(currentRow.Cells(7).Value)
+                    Registro.TextBox9.Text = Conversions.ToString(currentRow.Cells(7).Value)
                     If (Not Information.IsDBNull(RuntimeHelpers.GetObjectValue(currentRow.Cells(9).Value))) Then
-                        MyProject.Forms.Registro.TextBox13.Text = Conversions.ToString(currentRow.Cells(9).Value)
+                        Registro.TextBox13.Text = Conversions.ToString(currentRow.Cells(9).Value)
                     Else
-                        MyProject.Forms.Registro.TextBox13.Text = "Altos de San José, Instituto Alfonso Guillén Zelaya, Tegucigalpa Honduras 11101"
+                        Registro.TextBox13.Text = "Altos de San José, Instituto Alfonso Guillén Zelaya, Tegucigalpa Honduras 11101"
                     End If
                     If (Not Information.IsDBNull(RuntimeHelpers.GetObjectValue(currentRow.Cells(4).Value))) Then
-                        MyProject.Forms.Registro.ComboBox1.Text = Conversions.ToString(currentRow.Cells(4).Value)
+                        Registro.ComboBox1.Text = Conversions.ToString(currentRow.Cells(4).Value)
                     Else
-                        MyProject.Forms.Registro.ComboBox1.Text = ""
+                        Registro.ComboBox1.Text = ""
                     End If
                     If (Not Information.IsDBNull(RuntimeHelpers.GetObjectValue(currentRow.Cells(10).Value))) Then
-                        MyProject.Forms.Registro.TextBox5.Text = Conversions.ToString(currentRow.Cells(10).Value)
+                        Registro.TextBox5.Text = Conversions.ToString(currentRow.Cells(10).Value)
                     Else
-                        MyProject.Forms.Registro.TextBox5.Text = ""
+                        Registro.TextBox5.Text = ""
                     End If
                     If (Not Information.IsDBNull(RuntimeHelpers.GetObjectValue(currentRow.Cells(11).Value))) Then
-                        MyProject.Forms.Registro.TextBox10.Text = Conversions.ToString(currentRow.Cells(11).Value)
+                        Registro.TextBox10.Text = Conversions.ToString(currentRow.Cells(11).Value)
                     Else
-                        MyProject.Forms.Registro.TextBox10.Text = ""
+                        Registro.TextBox10.Text = ""
                     End If
                     If (Not Information.IsDBNull(RuntimeHelpers.GetObjectValue(currentRow.Cells(12).Value))) Then
-                        MyProject.Forms.Registro.TextBox11.Text = Conversions.ToString(currentRow.Cells(12).Value)
+                        Registro.TextBox11.Text = Conversions.ToString(currentRow.Cells(12).Value)
                     Else
-                        MyProject.Forms.Registro.TextBox11.Text = ""
+                        Registro.TextBox11.Text = ""
                     End If
                     If (Not Information.IsDBNull(RuntimeHelpers.GetObjectValue(currentRow.Cells(13).Value))) Then
-                        MyProject.Forms.Registro.TextBox15.Text = Conversions.ToString(currentRow.Cells(13).Value)
+                        Registro.TextBox15.Text = Conversions.ToString(currentRow.Cells(13).Value)
                     Else
-                        MyProject.Forms.Registro.TextBox15.Text = ""
+                        Registro.TextBox15.Text = ""
                     End If
                     If (Not Information.IsDBNull(RuntimeHelpers.GetObjectValue(currentRow.Cells(14).Value))) Then
-                        MyProject.Forms.Registro.TextBox14.Text = Conversions.ToString(currentRow.Cells(14).Value)
+                        Registro.TextBox14.Text = Conversions.ToString(currentRow.Cells(14).Value)
                     Else
-                        MyProject.Forms.Registro.TextBox14.Text = ""
+                        Registro.TextBox14.Text = ""
                     End If
                     If (Not Information.IsDBNull(RuntimeHelpers.GetObjectValue(currentRow.Cells(15).Value))) Then
-                        MyProject.Forms.Registro.TextBox12.Text = Conversions.ToString(currentRow.Cells(15).Value)
+                        Registro.TextBox12.Text = Conversions.ToString(currentRow.Cells(15).Value)
                     Else
-                        MyProject.Forms.Registro.TextBox12.Text = ""
+                        Registro.TextBox12.Text = ""
                     End If
                     If (Not Information.IsDBNull(RuntimeHelpers.GetObjectValue(currentRow.Cells(16).Value))) Then
-                        MyProject.Forms.Registro.TextBox16.Text = Conversions.ToString(currentRow.Cells(16).Value)
+                        Registro.TextBox16.Text = Conversions.ToString(currentRow.Cells(16).Value)
                     Else
-                        MyProject.Forms.Registro.TextBox16.Text = ""
+                        Registro.TextBox16.Text = ""
                     End If
                     If (Not Information.IsDBNull(RuntimeHelpers.GetObjectValue(currentRow.Cells(22).Value))) Then
-                        MyProject.Forms.Registro.TextBox20.Text = Conversions.ToString(currentRow.Cells(22).Value)
+                        Registro.TextBox20.Text = Conversions.ToString(currentRow.Cells(22).Value)
                     Else
-                        MyProject.Forms.Registro.TextBox20.Text = ""
+                        Registro.TextBox20.Text = ""
                     End If
                     If (Not Information.IsDBNull(RuntimeHelpers.GetObjectValue(currentRow.Cells(23).Value))) Then
-                        MyProject.Forms.Registro.TextBox21.Text = Conversions.ToString(currentRow.Cells(23).Value)
+                        Registro.TextBox21.Text = Conversions.ToString(currentRow.Cells(23).Value)
                     Else
-                        MyProject.Forms.Registro.TextBox21.Text = ""
+                        Registro.TextBox21.Text = ""
                     End If
                     If (Not Information.IsDBNull(RuntimeHelpers.GetObjectValue(currentRow.Cells(20).Value))) Then
-                        MyProject.Forms.Registro.TextBox17.Text = Conversions.ToString(currentRow.Cells(20).Value)
+                        Registro.TextBox17.Text = Conversions.ToString(currentRow.Cells(20).Value)
                     Else
-                        MyProject.Forms.Registro.TextBox17.Text = ""
+                        Registro.TextBox17.Text = ""
                     End If
                     If (Not Information.IsDBNull(RuntimeHelpers.GetObjectValue(currentRow.Cells(21).Value))) Then
-                        MyProject.Forms.Registro.TextBox18.Text = Conversions.ToString(currentRow.Cells(21).Value)
+                        Registro.TextBox18.Text = Conversions.ToString(currentRow.Cells(21).Value)
                     Else
-                        MyProject.Forms.Registro.TextBox18.Text = ""
+                        Registro.TextBox18.Text = ""
                     End If
                     If (Not Information.IsDBNull(RuntimeHelpers.GetObjectValue(currentRow.Cells(17).Value))) Then
-                        MyProject.Forms.Registro.DateEdit1.EditValue = Conversions.ToDate(currentRow.Cells(17).Value)
+                        Registro.DateEdit1.EditValue = Conversions.ToDate(currentRow.Cells(17).Value)
                     Else
-                        MyProject.Forms.Registro.DateEdit1.EditValue = ""
+                        Registro.DateEdit1.EditValue = ""
                     End If
                     If (Not Information.IsDBNull(RuntimeHelpers.GetObjectValue(currentRow.Cells(19).Value))) Then
-                        MyProject.Forms.Registro.TextBox19.Text = Conversions.ToString(currentRow.Cells(19).Value)
+                        Registro.TextBox19.Text = Conversions.ToString(currentRow.Cells(19).Value)
                     Else
-                        MyProject.Forms.Registro.TextBox19.Text = ""
+                        Registro.TextBox19.Text = ""
                     End If
                     If (Not Information.IsDBNull(RuntimeHelpers.GetObjectValue(currentRow.Cells(26).Value))) Then
-                        MyProject.Forms.Registro.TextBox22.Text = Conversions.ToString(currentRow.Cells(26).Value)
+                        Registro.TextBox22.Text = Conversions.ToString(currentRow.Cells(26).Value)
                     Else
-                        MyProject.Forms.Registro.TextBox22.Text = ""
+                        Registro.TextBox22.Text = ""
                     End If
                     If (Not Information.IsDBNull(RuntimeHelpers.GetObjectValue(currentRow.Cells(27).Value))) Then
-                        MyProject.Forms.Registro.ComboBox2.Text = Conversions.ToString(currentRow.Cells(27).Value)
+                        Registro.ComboBox2.Text = Conversions.ToString(currentRow.Cells(27).Value)
                     Else
-                        MyProject.Forms.Registro.ComboBox2.Text = ""
+                        Registro.ComboBox2.Text = ""
                     End If
                     If (Not Information.IsDBNull(RuntimeHelpers.GetObjectValue(currentRow.Cells(29).Value))) Then
-                        MyProject.Forms.Registro.TextBox24.Text = Conversions.ToString(currentRow.Cells(29).Value)
+                        Registro.TextBox24.Text = Conversions.ToString(currentRow.Cells(29).Value)
                     Else
-                        MyProject.Forms.Registro.TextBox24.Text = ""
+                        Registro.TextBox24.Text = ""
                     End If
                     If (Not Information.IsDBNull(RuntimeHelpers.GetObjectValue(currentRow.Cells(30).Value))) Then
-                        MyProject.Forms.Registro.TextBox25.Text = Conversions.ToString(currentRow.Cells(30).Value)
+                        Registro.TextBox25.Text = Conversions.ToString(currentRow.Cells(30).Value)
                     Else
-                        MyProject.Forms.Registro.TextBox25.Text = ""
+                        Registro.TextBox25.Text = ""
                     End If
                     If (Information.IsDBNull(RuntimeHelpers.GetObjectValue(currentRow.Cells(18).Value))) Then
-                        MyProject.Forms.Registro.RadioButton1.Checked = False
-                        MyProject.Forms.Registro.RadioButton2.Checked = False
+                        Registro.RadioButton1.Checked = False
+                        Registro.RadioButton2.Checked = False
                     ElseIf (Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Conversions.ToString(currentRow.Cells(18).Value), "Masculino", False) <> 0) Then
-                        MyProject.Forms.Registro.RadioButton2.Checked = True
+                        Registro.RadioButton2.Checked = True
                     Else
-                        MyProject.Forms.Registro.RadioButton1.Checked = True
+                        Registro.RadioButton1.Checked = True
                     End If
                     If (Information.IsDBNull(RuntimeHelpers.GetObjectValue(currentRow.Cells(24).Value))) Then
-                        MyProject.Forms.Registro.RadioButton3.Checked = False
-                        MyProject.Forms.Registro.RadioButton4.Checked = False
+                        Registro.RadioButton3.Checked = False
+                        Registro.RadioButton4.Checked = False
                     ElseIf (Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Conversions.ToString(currentRow.Cells(24).Value), "Si", False) <> 0) Then
-                        MyProject.Forms.Registro.RadioButton3.Checked = True
+                        Registro.RadioButton3.Checked = True
                     Else
-                        MyProject.Forms.Registro.RadioButton4.Checked = True
+                        Registro.RadioButton4.Checked = True
                     End If
                     If (Information.IsDBNull(RuntimeHelpers.GetObjectValue(currentRow.Cells(25).Value))) Then
-                        MyProject.Forms.Registro.RadioButton5.Checked = False
-                        MyProject.Forms.Registro.RadioButton6.Checked = False
+                        Registro.RadioButton5.Checked = False
+                        Registro.RadioButton6.Checked = False
                     ElseIf (Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Conversions.ToString(currentRow.Cells(25).Value), "Si", False) <> 0) Then
-                        MyProject.Forms.Registro.RadioButton5.Checked = True
+                        Registro.RadioButton5.Checked = True
                     Else
-                        MyProject.Forms.Registro.RadioButton6.Checked = True
+                        Registro.RadioButton6.Checked = True
                     End If
-                    MyProject.Forms.Registro.SimpleButton1.Visible = False
-                    MyProject.Forms.Registro.SimpleButton2.Visible = False
-                    MyProject.Forms.Registro.SimpleButton3.Visible = True
+                    Registro.SimpleButton1.Visible = False
+                    Registro.SimpleButton2.Visible = False
+                    Registro.SimpleButton3.Visible = True
                     Me.Panel1.Visible = True
                 Catch exception As System.Exception
                     ProjectData.SetProjectError(exception)
@@ -693,7 +693,7 @@ Namespace ssh
             DirectCast(Me.TextEdit2.Properties, ISupportInitialize).BeginInit()
             Me.Panel4.SuspendLayout()
             MyBase.SuspendLayout()
-            Me.PictureBox1.Image = Resources.close
+            Me.PictureBox1.Image = My.Resources.close
             Me.PictureBox1.Location = New Point(1223, 2)
             Me.PictureBox1.Name = "PictureBox1"
             Me.PictureBox1.Size = New System.Drawing.Size(57, 51)
@@ -1059,11 +1059,11 @@ Namespace ssh
         End Sub
 
         Private Sub ListadoFormClosing(ByVal sender As Object, ByVal e As FormClosingEventArgs)
-            MyProject.Forms.Registro.SimpleButton1.Visible = True
-            MyProject.Forms.Registro.SimpleButton2.Visible = True
-            MyProject.Forms.Registro.SimpleButton3.Visible = False
-            MyProject.Forms.Registro.Limpiar()
-            MyProject.Forms.Form1.Show()
+            Registro.SimpleButton1.Visible = True
+            Registro.SimpleButton2.Visible = True
+            Registro.SimpleButton3.Visible = False
+            Registro.Limpiar()
+            Form1.Show()
         End Sub
 
         Private Sub ListadoMouseMove(ByVal sender As Object, ByVal e As MouseEventArgs)

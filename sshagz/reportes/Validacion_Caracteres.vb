@@ -1,12 +1,9 @@
-Imports Microsoft.VisualBasic
 Imports Microsoft.VisualBasic.CompilerServices
-Imports System
-Imports System.Collections
 Imports System.Text.RegularExpressions
-Imports System.Windows.Forms
 
-Namespace ssh
-	Friend Module Validacion_Caracteres
+
+
+Friend Module Validacion_Caracteres
 		Public Function EliminarCaracteresRepetidos(ByVal cadena As String) As String
 			Dim str As String
 			Dim num As Integer = 0
@@ -79,4 +76,3 @@ Namespace ssh
 			Throw New NotImplementedException()
 		End Sub
 	End Module
-End Namespace

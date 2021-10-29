@@ -140,19 +140,19 @@ Namespace ssh
             Me.TileItem5.AppearanceItem.Normal.Options.UseFont = True
             Me.TileItem5.BackgroundImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
             Me.TileItem5.ContentAnimation = DevExpress.XtraEditors.TileItemContentAnimationType.ScrollLeft
-            TileItemElement1.Image = My.Resources.man
+            TileItemElement1.Image = Global.sshagz.My.Resources.Resources.man
             TileItemElement1.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
             TileItemElement1.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left
             TileItemElement1.Text = "Agregar registro online"
             TileItemElement1.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopRight
             Me.TileItem5.Elements.Add(TileItemElement1)
-            TileItemElement2.Image = My.Resources.man
+            TileItemElement2.Image = Global.sshagz.My.Resources.Resources.man
             TileItemElement2.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
             TileItemElement2.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left
             TileItemElement2.Text = "Agregar registro online"
             TileItemElement2.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopRight
             TileItemFrame1.Elements.Add(TileItemElement2)
-            TileItemFrame1.Image = My.Resources.man
+            TileItemFrame1.Image = Global.sshagz.My.Resources.Resources.man
             Me.TileItem5.Frames.Add(TileItemFrame1)
             Me.TileItem5.Id = 9
             Me.TileItem5.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide
@@ -169,7 +169,7 @@ Namespace ssh
             Me.TileItem2.AppearanceItem.Normal.Options.UseBorderColor = True
             Me.TileItem2.AppearanceItem.Normal.Options.UseFont = True
             Me.TileItem2.AppearanceItem.Normal.Options.UseForeColor = True
-            TileItemElement3.Image = My.Resources.audit
+            TileItemElement3.Image = Global.sshagz.My.Resources.Resources.audit
             TileItemElement3.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopCenter
             TileItemElement3.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.Stretch
             TileItemElement3.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom
@@ -189,7 +189,7 @@ Namespace ssh
             Me.TileItem4.AppearanceItem.Normal.Options.UseBackColor = True
             Me.TileItem4.AppearanceItem.Normal.Options.UseBorderColor = True
             Me.TileItem4.AppearanceItem.Normal.Options.UseFont = True
-            TileItemElement4.Image = My.Resources.man
+            TileItemElement4.Image = Global.sshagz.My.Resources.Resources.man
             TileItemElement4.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomOutside
             TileItemElement4.Text = "Editar registro alumno"
             Me.TileItem4.Elements.Add(TileItemElement4)
@@ -215,7 +215,7 @@ Namespace ssh
             Me.TileItem1.AppearanceItem.Normal.Options.UseBorderColor = True
             Me.TileItem1.AppearanceItem.Normal.Options.UseFont = True
             Me.TileItem1.AppearanceItem.Normal.Options.UseForeColor = True
-            TileItemElement5.Image = My.Resources.contrato
+            TileItemElement5.Image = Global.sshagz.My.Resources.Resources.contrato
             TileItemElement5.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopCenter
             TileItemElement5.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.Stretch
             TileItemElement5.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Bottom
@@ -235,27 +235,26 @@ Namespace ssh
             Me.TileItem7.AppearanceItem.Normal.Options.UseBorderColor = True
             Me.TileItem7.AppearanceItem.Normal.Options.UseFont = True
             Me.TileItem7.ContentAnimation = DevExpress.XtraEditors.TileItemContentAnimationType.Fade
-            Me.TileItem7.CurrentFrameIndex = 1
-            TileItemElement6.Image = My.Resources.siflogopng2
+            TileItemElement6.Image = Global.sshagz.My.Resources.Resources.email
             TileItemElement6.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.Stretch
             TileItemElement6.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.None
             TileItemElement6.Text = "Contactar soporte"
             TileItemElement6.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomCenter
             Me.TileItem7.Elements.Add(TileItemElement6)
-            TileItemElement7.Image = My.Resources.email
+            TileItemElement7.Image = Global.sshagz.My.Resources.Resources.email
             TileItemElement7.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.Stretch
             TileItemElement7.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.None
             TileItemElement7.Text = "Contactar soporte"
             TileItemElement7.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomCenter
             TileItemFrame2.Elements.Add(TileItemElement7)
-            TileItemFrame2.Image = My.Resources.email
-            TileItemElement8.Image = My.Resources.siflogopng2
+            TileItemFrame2.Image = Global.sshagz.My.Resources.Resources.email
+            TileItemElement8.Image = Global.sshagz.My.Resources.Resources.siflogopng2
             TileItemElement8.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.Stretch
             TileItemElement8.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.None
             TileItemElement8.Text = "Contactar soporte"
             TileItemElement8.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomCenter
             TileItemFrame3.Elements.Add(TileItemElement8)
-            TileItemFrame3.Image = My.Resources.siflogopng2
+            TileItemFrame3.Image = Global.sshagz.My.Resources.Resources.siflogopng2
             Me.TileItem7.Frames.Add(TileItemFrame2)
             Me.TileItem7.Frames.Add(TileItemFrame3)
             Me.TileItem7.Id = 14
@@ -268,7 +267,7 @@ Namespace ssh
             Me.TileItem6.AppearanceItem.Normal.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.TileItem6.AppearanceItem.Normal.Options.UseBorderColor = True
             Me.TileItem6.AppearanceItem.Normal.Options.UseFont = True
-            TileItemElement9.Image = My.Resources.kyc
+            TileItemElement9.Image = Global.sshagz.My.Resources.Resources.kyc
             TileItemElement9.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomLeft
             TileItemElement9.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
             TileItemElement9.Text = "Ver listado de matricula"
@@ -285,7 +284,7 @@ Namespace ssh
             Me.TileItem3.AppearanceItem.Normal.Options.UseBackColor = True
             Me.TileItem3.AppearanceItem.Normal.Options.UseBorderColor = True
             Me.TileItem3.AppearanceItem.Normal.Options.UseFont = True
-            TileItemElement10.Image = My.Resources.document
+            TileItemElement10.Image = Global.sshagz.My.Resources.Resources.document
             TileItemElement10.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
             TileItemElement10.Text = "Ver ficha de matricula"
             Me.TileItem3.Elements.Add(TileItemElement10)
@@ -338,11 +337,11 @@ Namespace ssh
             'Cerrar
             '
             Me.Cerrar.Alignment = DevExpress.XtraBars.Navigation.NavButtonAlignment.Right
-            Me.Cerrar.Appearance.Image = My.Resources.close
+            Me.Cerrar.Appearance.Image = Global.sshagz.My.Resources.Resources.close
             Me.Cerrar.Appearance.Options.UseImage = True
             Me.Cerrar.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
             Me.Cerrar.AppearanceHovered.Options.UseBackColor = True
-            Me.Cerrar.AppearanceSelected.Image = My.Resources.close_x
+            Me.Cerrar.AppearanceSelected.Image = Global.sshagz.My.Resources.Resources.close_x
             Me.Cerrar.AppearanceSelected.Options.UseImage = True
             Me.Cerrar.Caption = "Cerrar"
             Me.Cerrar.Name = "Cerrar"
@@ -352,7 +351,7 @@ Namespace ssh
             Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
             Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-            Me.BackgroundImage = My.Resources.windows_8_1_wallpaper_remodeled_wallpaper_preview
+            Me.BackgroundImage = Global.sshagz.My.Resources.Resources.windows_8_1_wallpaper_remodeled_wallpaper_preview
             Me.ClientSize = New System.Drawing.Size(1050, 567)
             Me.Controls.Add(Me.TileNavPane1)
             Me.Controls.Add(Me.TileControl1)

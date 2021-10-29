@@ -169,15 +169,16 @@ Namespace ssh
 
 
         Public Sub Buscarsiexiste()
-            If (Microsoft.VisualBasic.CompilerServices.Operators.CompareString(modulo_variables_globales.usuario, "ykvk8", False) <> 0) Then
+            If modulo_variables_globales.usuario <> "ykvk8" Then
                 modulo_variables_globales.usuario = Me.TextBox3.Text
-                Dim dataTable As System.Data.DataTable = modulo_variables_globales.Buscar2(modulo_variables_globales.usuario)
-                If (dataTable.Rows.Count > 0) Then
-                    Dim item As DataRow = dataTable.Rows(0)
-                    modulo_variables_globales.usuario_verificar = Convert.ToString(RuntimeHelpers.GetObjectValue(item("identidadalumno")))
-                    If (Microsoft.VisualBasic.CompilerServices.Operators.CompareString(modulo_variables_globales.usuario_verificar.ToLower(), Me.TextBox3.Text.ToLower(), False) = 0) Then
+                Dim dt As New DataTable
+                dt = modulo_variables_globales.Buscar2(modulo_variables_globales.usuario)
+                If (dt.Rows.Count > 0) Then
+                    Dim item As DataRow = dt.Rows(0)
+                    modulo_variables_globales.usuario_verificar = Convert.ToString(item("identidadalumno"))
+                    If modulo_variables_globales.usuario_verificar.ToLower() = Me.TextBox3.Text.ToLower() Then
                         Interaction.MsgBox("el alumno ya existe", MsgBoxStyle.OkOnly, Nothing)
-                        Me.SimpleButton1.Enabled = False
+                        'Me.SimpleButton1.Enabled = False
                         Me.Limpiar()
                         Me.TextBox2.Focus()
                     End If
@@ -1364,7 +1365,7 @@ Namespace ssh
             '
             'PictureBox1
             '
-            Me.PictureBox1.Image = Global.Resources.close_x
+            Me.PictureBox1.Image = My.Resources.close_x
             Me.PictureBox1.Location = New System.Drawing.Point(1259, 3)
             Me.PictureBox1.Name = "PictureBox1"
             Me.PictureBox1.Size = New System.Drawing.Size(57, 51)
@@ -1573,7 +1574,7 @@ Namespace ssh
             Me.SimpleButton2.Visible = True
             Me.SimpleButton3.Visible = False
             Me.Limpiar()
-            MyProject.Forms.Form1.Show()
+            Form1.Show()
         End Sub
 
         Private Sub RegistroMouseMove(ByVal sender As Object, ByVal e As MouseEventArgs) Handles MyBase.MouseMove
@@ -1688,7 +1689,7 @@ Namespace ssh
                 ElseIf (Not (Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.TextBox18.Text, "Telefóno contacto de emergencia del alumno", False) = 0 Or Microsoft.VisualBasic.CompilerServices.Operators.CompareString(Me.TextBox18.Text, "", False) = 0)) Then
 
                     conexionmysql.Abrir_MYBD()
-                    '  Dim mySqlTransaction0 As MySqlTransaction = conexionmysql.myconn.BeginTransaction()
+                    Dim mySqlTransaction0 As MySqlTransaction = conexionmysql.myconn.BeginTransaction()
                     Try
                         Try
                             Dim mySqlCommand As MySql.Data.MySqlClient.MySqlCommand = New MySql.Data.MySqlClient.MySqlCommand("insert into matricula2 (nombre,identidadalumno,idp,grado,profesion,padre,telefono,email,direccion, lugartrabajo, nombrepadre, lugartrabajopadre, telefonopadre, nombremadre, lugartrabajomadre, telefonomadre, deptonac, municipionac, emergencia, telefonoemergencia, sexo, condicionado, repitente, fechanac, nacionalidad, edad, modalidad, colegioanterior, cursoanterior, modalidadanterior, anioanterior, lugaranterior) values (@nombrealumno,@identidadalumno,@idp,@grado,@profesion,@padre,@telefono,@email,@direccion, @lugartrabajo, @nombrepadre, @lugartrabajopadre, @telefonopadre, @nombremadre, @lugartrabajomadre, @telefonomadre, @deptonac, @municipionac, @emergencia, @telefonoemergencia, @sexo, @condicionado, @repitente, @fechanac, @nacionalidad, @edad, @modalidad, @colegioanterior, @cursoanterior, @modalidadanterior, @anioanterior, @lugaranterior);", conexionmysql.myconn)
@@ -1742,9 +1743,9 @@ Namespace ssh
                             mySqlCommand.Parameters.AddWithValue("@modalidadanterior", str5)
                             mySqlCommand.Parameters.AddWithValue("@anioanterior", Me.TextBox24.Text)
                             mySqlCommand.Parameters.AddWithValue("@lugaranterior", Me.TextBox25.Text)
-                            ' mySqlCommand.Transaction = CType(mySqlTransaction0, MySqlTransaction)
-                            ' mySqlCommand.ExecuteNonQuery()
-                            '  mySqlTransaction0.Commit()
+                            mySqlCommand.Transaction = CType(mySqlTransaction0, MySqlTransaction)
+                            mySqlCommand.ExecuteNonQuery()
+                            mySqlTransaction0.Commit()
                         Catch ex As Exception
                             'Interaction.MsgBox(ex.ToString)
                             'Dim exception1 As System.Exception = exception2

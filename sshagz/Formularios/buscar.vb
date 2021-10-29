@@ -337,7 +337,7 @@ Namespace ssh
 
         Private Sub Button5_Click(ByVal sender As Object, ByVal e As EventArgs)
             MyBase.Hide()
-            MyProject.Forms.Registro.Show()
+            Registro.Show()
         End Sub
 
         Private Sub Button7_Click(ByVal sender As Object, ByVal e As EventArgs)

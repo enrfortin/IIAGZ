@@ -2515,11 +2515,11 @@ Namespace ssh.chrilyhd_matriculaagzDataSet1TableAdapters
 		<DebuggerNonUserCode>
 		<GeneratedCode("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>
 		Private Sub InitConnection()
-			Me._connection = New MySqlConnection() With
-			{
-				.ConnectionString = MySettings.[Default].chrilyhd_matriculaagzConnectionString
-			}
-		End Sub
+            Me._connection = New MySqlConnection() With
+            {
+                .ConnectionString = My.MySettings.[Default].chrilyhd_matriculaagzConnectionString
+            }
+        End Sub
 
 		<DataObjectMethod(DataObjectMethodType.Insert, True)>
 		<DebuggerNonUserCode>
