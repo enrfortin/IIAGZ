@@ -24,19 +24,23 @@ Public Class conexionmysql
         Public Shared Sub Cerrar_MYBD()
             If myconn.State = ConnectionState.Closed Then
             Else
-                Try
-                    myconn.Close()
-                Catch
-                End Try
+            Try
+                myconn.Close()
+                MsgBox("conexion cerrada")
+            Catch ex As Exception
+                MsgBox(ex.ToString)
+            End Try
             End If
         End Sub
         Public Shared Sub Abrir_MYBD()
             If myconn.State = ConnectionState.Open Then
             Else
-                Try
-                    myconn.Open()
-                Catch
-                End Try
+            Try
+                myconn.Open()
+                MsgBox("conexion abierta")
+            Catch ex As Exception
+                MsgBox(ex.ToString)
+            End Try
             End If
         End Sub
 

@@ -41,16 +41,18 @@ Friend Module modulo_variables_globales
 		End Function
 
     Public Function Buscar2(id As String) As DataTable
-        Dim dt As New DataTable()
+        Dim table As New DataTable()
         conexionmysql.Abrir_MYBD()
-        Dim comando As New MySqlCommand("SELECT * FROM matricula2 WHERE identidad_alumno=@ida", conexionmysql.myconn)
+        Const consulta As String = "SELECT * FROM matricula2 WHERE identidad_alumno=@ida;"
+        Dim comando As New MySqlCommand(consulta, conexionmysql.myconn)
         comando.Parameters.AddWithValue("@ida", modulo_variables_globales.usuario)
         Dim adap As New MySqlDataAdapter(comando)
         Try
-            adap.Fill(dt)
+            adap.Fill(table)
         Catch ex As Exception
+            MsgBox(ex.ToString)
         End Try
-        Return dt
+        Return table
     End Function
 
     Public Function letra_cap(ByVal loquesea As String) As String

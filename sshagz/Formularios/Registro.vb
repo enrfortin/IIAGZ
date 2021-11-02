@@ -161,8 +161,8 @@ Namespace ssh
 
 
         Friend WithEvents TextBox8 As TextBox
-
-
+        Friend WithEvents Chrilyhd_matriculaagzDataSet1 As chrilyhd_matriculaagzDataSet
+        Friend WithEvents Chrilyhd_matriculaagzDataSet11 As chrilyhd_matriculaagzDataSet1
         Friend WithEvents TextBox9 As TextBox
 
 
@@ -303,6 +303,8 @@ Namespace ssh
             Me.TextBox1 = New System.Windows.Forms.TextBox()
             Me.SeparatorControl1 = New DevExpress.XtraEditors.SeparatorControl()
             Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+            Me.Chrilyhd_matriculaagzDataSet1 = New sshagz.ssh.chrilyhd_matriculaagzDataSet()
+            Me.Chrilyhd_matriculaagzDataSet11 = New sshagz.ssh.chrilyhd_matriculaagzDataSet1()
             Me.GroupBox1.SuspendLayout()
             Me.GroupBox13.SuspendLayout()
             Me.GroupBox12.SuspendLayout()
@@ -338,6 +340,8 @@ Namespace ssh
             CType(Me.SeparatorControl6, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.SeparatorControl1, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.Chrilyhd_matriculaagzDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.Chrilyhd_matriculaagzDataSet11, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
             'Label7
@@ -1365,13 +1369,23 @@ Namespace ssh
             '
             'PictureBox1
             '
-            Me.PictureBox1.Image = My.Resources.close_x
+            Me.PictureBox1.Image = Global.sshagz.My.Resources.Resources.close_x
             Me.PictureBox1.Location = New System.Drawing.Point(1259, 3)
             Me.PictureBox1.Name = "PictureBox1"
             Me.PictureBox1.Size = New System.Drawing.Size(57, 51)
             Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
             Me.PictureBox1.TabIndex = 157
             Me.PictureBox1.TabStop = False
+            '
+            'Chrilyhd_matriculaagzDataSet1
+            '
+            Me.Chrilyhd_matriculaagzDataSet1.DataSetName = "chrilyhd_matriculaagzDataSet"
+            Me.Chrilyhd_matriculaagzDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+            '
+            'Chrilyhd_matriculaagzDataSet11
+            '
+            Me.Chrilyhd_matriculaagzDataSet11.DataSetName = "chrilyhd_matriculaagzDataSet1"
+            Me.Chrilyhd_matriculaagzDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
             '
             'Registro
             '
@@ -1433,6 +1447,8 @@ Namespace ssh
             CType(Me.SeparatorControl6, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.SeparatorControl1, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.Chrilyhd_matriculaagzDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.Chrilyhd_matriculaagzDataSet11, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
 

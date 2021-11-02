@@ -96,3 +96,16 @@ C:\Users\T5600\Documents\GitHub\IIAGZ\sshagz\bin\Debug\ja\DevExpress.Pdf.v16.1.C
 C:\Users\T5600\Documents\GitHub\IIAGZ\sshagz\bin\Debug\ru\DevExpress.Pdf.v16.1.Core.resources.dll
 C:\Users\T5600\Documents\GitHub\IIAGZ\sshagz\obj\Debug\sshagz.exe
 C:\Users\T5600\Documents\GitHub\IIAGZ\sshagz\obj\Debug\sshagz.pdb
+C:\Users\T5600\Documents\GitHub\IIAGZ\sshagz\bin\Debug\DevExpress.CodeParser.v16.1.dll
+C:\Users\T5600\Documents\GitHub\IIAGZ\sshagz\bin\Debug\DevExpress.DataAccess.v16.1.dll
+C:\Users\T5600\Documents\GitHub\IIAGZ\sshagz\bin\Debug\DevExpress.Xpo.v16.1.dll
+C:\Users\T5600\Documents\GitHub\IIAGZ\sshagz\bin\Debug\DevExpress.DataAccess.v16.1.xml
+C:\Users\T5600\Documents\GitHub\IIAGZ\sshagz\bin\Debug\DevExpress.Xpo.v16.1.xml
+C:\Users\T5600\Documents\GitHub\IIAGZ\sshagz\bin\Debug\de\DevExpress.DataAccess.v16.1.resources.dll
+C:\Users\T5600\Documents\GitHub\IIAGZ\sshagz\bin\Debug\es\DevExpress.DataAccess.v16.1.resources.dll
+C:\Users\T5600\Documents\GitHub\IIAGZ\sshagz\bin\Debug\ja\DevExpress.DataAccess.v16.1.resources.dll
+C:\Users\T5600\Documents\GitHub\IIAGZ\sshagz\bin\Debug\ru\DevExpress.DataAccess.v16.1.resources.dll
+C:\Users\T5600\Documents\GitHub\IIAGZ\sshagz\bin\Debug\de\DevExpress.Xpo.v16.1.resources.dll
+C:\Users\T5600\Documents\GitHub\IIAGZ\sshagz\bin\Debug\es\DevExpress.Xpo.v16.1.resources.dll
+C:\Users\T5600\Documents\GitHub\IIAGZ\sshagz\bin\Debug\ja\DevExpress.Xpo.v16.1.resources.dll
+C:\Users\T5600\Documents\GitHub\IIAGZ\sshagz\bin\Debug\ru\DevExpress.Xpo.v16.1.resources.dll
