@@ -2517,7 +2517,7 @@ Namespace ssh.chrilyhd_matriculaagzDataSet1TableAdapters
 		Private Sub InitConnection()
             Me._connection = New MySqlConnection() With
             {
-                .ConnectionString = My.MySettings.[Default].chrilyhd_matriculaagzConnectionString
+                .ConnectionString = My.chrilyhd_matriculaagzConnectionString
             }
         End Sub
 

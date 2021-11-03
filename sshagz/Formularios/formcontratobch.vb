@@ -14,8 +14,8 @@ Imports System.Windows.Forms
 
 
 <DesignerGenerated>
-	Public Class formcontratobch
-		Inherits Form
+Public Class formcontratobch
+    Inherits Form
 
     Friend WithEvents ReportViewer1 As ReportViewer
     Private components As IContainer
@@ -62,7 +62,6 @@ Imports System.Windows.Forms
 
     <DebuggerStepThrough>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.SuspendLayout()
@@ -71,6 +70,7 @@ Imports System.Windows.Forms
         '
         Me.ReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
         ReportDataSource1.Name = "DataSet1"
+        ReportDataSource1.Value = Nothing
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "sshagz.ssh.BCH.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
